@@ -1,3 +1,4 @@
 pubic/
 
 .deploy_git/
+.github
