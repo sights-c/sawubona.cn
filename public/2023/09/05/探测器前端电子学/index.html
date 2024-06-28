@@ -1,0 +1,1142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Hexo Theme Redefine">
+    
+    <meta name="author" content="陈">
+    <!-- preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    
+    <!--- Seo Part-->
+    
+    <link rel="canonical" href="https://www.sawubona.cn/2023/09/05/探测器前端电子学/"/>
+    <meta name="robots" content="index,follow">
+    <meta name="googlebot" content="index,follow">
+    <meta name="revisit-after" content="1 days">
+    
+        <meta name="description" content="信号到数据的转换前端电子的主要功能和触发系统前端电子学的功能前端电子学的主要功能就是抽取粒子探测器输出电信号的某些特征，转换为能够反映粒子特性的数据，供在线计算机读取和记录。 系统读出的死时间信号到数据的转换、读取和记录过程需要较长的时间，若系统在前一个信号的处理过程中不能处理下一个信号，则会出现死时间。 触发系统 前端电子学的探测信号经过初步处理后传递给触发系统作为触发判选的原始条件。 触发系统">
+<meta property="og:type" content="article">
+<meta property="og:title" content="探测器前端电子学">
+<meta property="og:url" content="https://www.sawubona.cn/2023/09/05/%E6%8E%A2%E6%B5%8B%E5%99%A8%E5%89%8D%E7%AB%AF%E7%94%B5%E5%AD%90%E5%AD%A6/index.html">
+<meta property="og:site_name" content="溯吾百纳">
+<meta property="og:description" content="信号到数据的转换前端电子的主要功能和触发系统前端电子学的功能前端电子学的主要功能就是抽取粒子探测器输出电信号的某些特征，转换为能够反映粒子特性的数据，供在线计算机读取和记录。 系统读出的死时间信号到数据的转换、读取和记录过程需要较长的时间，若系统在前一个信号的处理过程中不能处理下一个信号，则会出现死时间。 触发系统 前端电子学的探测信号经过初步处理后传递给触发系统作为触发判选的原始条件。 触发系统">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://z1.ax1x.com/2023/10/07/pPjY5Nj.png">
+<meta property="og:image" content="https://z1.ax1x.com/2023/10/07/pPjYfHg.png">
+<meta property="og:image" content="https://z1.ax1x.com/2023/10/07/pPjYgjf.png">
+<meta property="og:image" content="https://z1.ax1x.com/2023/10/07/pPjYTCn.png">
+<meta property="og:image" content="https://z1.ax1x.com/2023/10/07/pPjY4EQ.png">
+<meta property="og:image" content="https://z1.ax1x.com/2023/10/07/pPjY73q.png">
+<meta property="og:image" content="https://z1.ax1x.com/2023/10/07/pPjYI4s.png">
+<meta property="og:image" content="https://z1.ax1x.com/2023/10/07/pPjYWDS.png">
+<meta property="article:published_time" content="2023-09-05T06:14:50.000Z">
+<meta property="article:modified_time" content="2024-06-28T18:02:33.453Z">
+<meta property="article:author" content="陈">
+<meta property="article:tag" content="电子学">
+<meta property="article:tag" content="探测器">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://z1.ax1x.com/2023/10/07/pPjY5Nj.png">
+    
+    
+    <!--- Icon Part-->
+    <link rel="icon" type="image/png" href="/favicon.ico" sizes="192x192">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon.ico">
+    <meta name="theme-color" content="#2c7692">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <!--- Page Info-->
+    
+    <title>
+        
+            探测器前端电子学 -
+        
+        溯吾百纳
+    </title>
+
+    
+<link rel="stylesheet" href="/fonts/Chillax/chillax.css">
+
+
+    <!--- Inject Part-->
+    
+        
+            
+    
+            
+    
+
+    
+<link rel="stylesheet" href="/css/style.css">
+
+
+    
+        
+<link rel="stylesheet" href="/assets/build/styles.css">
+
+    
+
+    
+<link rel="stylesheet" href="/fonts/GeistMono/geist-mono.css">
+
+    
+<link rel="stylesheet" href="/fonts/Geist/geist.css">
+
+    <!--- Font Part-->
+    
+    
+    
+    
+
+    
+        
+<script src="/js/libs/anime.min.js"></script>
+
+    
+
+    <script id="hexo-configurations">
+    window.config = {"hostname":"www.sawubona.cn","root":"/","language":"en"};
+    window.theme = {"articles":{"style":{"font_size":"16px","line_height":1.5,"image_border_radius":"14px","image_alignment":"center","image_caption":false,"link_icon":true,"title_alignment":"left","headings_top_spacing":{"h1":"5rem","h2":"4rem","h3":"2.8rem","h4":"2.5rem","h5":"2.2rem","h6":"2rem"}},"word_count":{"enable":true,"count":true,"min2read":true},"author_label":{"enable":false,"auto":false,"list":[]},"code_block":{"copy":true,"style":"mac","font":{"enable":false,"family":null,"url":null}},"toc":{"enable":true,"max_depth":3,"number":false,"expand":true,"init_open":true},"copyright":{"enable":true,"default":"cc_by_nc_sa"},"lazyload":true,"recommendation":{"enable":false,"title":"Recommendation","limit":3,"mobile_limit":2,"placeholder":"/images/wallhaven-wqery6-light.webp","skip_dirs":[]}},"colors":{"primary":"#2c7692","secondary":null,"default_mode":"light"},"global":{"fonts":{"chinese":{"enable":false,"family":null,"url":null},"english":{"enable":false,"family":null,"url":null}},"content_max_width":"1000px","sidebar_width":"210px","hover":{"shadow":true,"scale":true},"scroll_progress":{"bar":false,"percentage":true},"website_counter":{"url":"https://cn.vercount.one/js","enable":true,"site_pv":true,"site_uv":true,"post_pv":true},"single_page":false,"preloader":true,"open_graph":true,"google_analytics":{"enable":false,"id":null}},"home_banner":{"enable":true,"style":"fixed","image":{"light":"/banner.webp","dark":"/banner.webp"},"title":"Sawubona","subtitle":{"text":null,"hitokoto":{"enable":false,"api":"https://v1.hitokoto.cn"},"typing_speed":100,"backing_speed":80,"starting_delay":500,"backing_delay":1500,"loop":true,"smart_backspace":true},"text_color":{"light":"#ffffff","dark":"#ffffff"},"text_style":{"title_size":"2.8rem","subtitle_size":"1.5rem","line_height":1.2},"custom_font":{"enable":false,"family":null,"url":null},"social_links":{"enable":false,"style":"default","links":{"github":null,"instagram":null,"zhihu":null,"twitter":null,"email":null},"qrs":{"weixin":null}}},"plugins":{"feed":{"enable":false},"aplayer":{"enable":false,"type":"fixed","audios":[{"name":null,"artist":null,"url":null,"cover":null,"lrc":null}]},"mermaid":{"enable":false,"version":"9.3.0"}},"version":"2.6.4","navbar":{"auto_hide":false,"color":{"left":"#12577d","right":"#cae9f3","transparency":35},"width":{"home":"1200px","pages":"1000px"},"links":{"Home":{"path":"/","icon":"fa-regular fa-house"},"Archives":{"path":"/archives","icon":"fa-regular fa-archive"},"Categories":{"path":"/categories","icon":"fa-regular fa-folder"},"Tags":{"path":"/tags","icon":"fa-regular fa-tags"},"About":{"path":"/about","icon":"fa-regular fa-user"}},"search":{"enable":true,"preload":true}},"page_templates":{"friends_column":2,"tags_style":"blur"},"home":{"sidebar":{"enable":false,"position":"left","first_item":"menu","announcement":null,"show_on_mobile":true,"links":{"Archives":{"path":"/archives","icon":"fa-regular fa-archive"},"Tags":{"path":"/tags","icon":"fa-regular fa-tags"},"Categories":{"path":"/categories","icon":"fa-regular fa-folder"}}},"article_date_format":"auto","categories":{"enable":true,"limit":5},"tags":{"enable":true,"limit":5}},"footerStart":"2023/09/03 15:42:43"};
+    window.lang_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"};
+    window.data = {"masonry":false};
+  </script>
+    
+    <!--- Fontawesome Part-->
+    
+<link rel="stylesheet" href="/fontawesome/fontawesome.min.css">
+
+    
+<link rel="stylesheet" href="/fontawesome/brands.min.css">
+
+    
+<link rel="stylesheet" href="/fontawesome/solid.min.css">
+
+    
+<link rel="stylesheet" href="/fontawesome/regular.min.css">
+
+    
+    
+    
+    
+<meta name="generator" content="Hexo 7.2.0"></head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+
+    
+</div>
+
+
+
+    <style>
+    :root {
+        --preloader-background-color: #fff;
+        --preloader-text-color: #000;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        :root {
+            --preloader-background-color: #202124;
+            --preloader-text-color: #fff;
+        }
+    }
+
+    @media (prefers-color-scheme: light) {
+        :root {
+            --preloader-background-color: #fff;
+            --preloader-text-color: #000;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .ml13 {
+            font-size: 2.6rem !important; /* Adjust this value as needed */
+        }
+    }
+
+    .preloader {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem; /* Tailwind 'gap-4' is 1rem */
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        padding: 12px;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh; /* 'h-screen' is 100% of the viewport height */
+        background-color: var(--preloader-background-color);
+        z-index: 1100; /* 'z-[1100]' sets the z-index */
+        transition: opacity 0.2s ease-in-out;
+    }
+
+    .ml13 {
+        font-size: 3.2rem;
+        /* text-transform: uppercase; */
+        color: var(--preloader-text-color);
+        letter-spacing: -1px;
+        font-weight: 500;
+        font-family: 'Chillax-Variable', sans-serif;
+        text-align: center;
+    }
+
+    .ml13 .word {
+        display: inline-flex;
+        flex-wrap: wrap;
+        white-space: nowrap;
+    }
+
+    .ml13 .letter {
+        display: inline-block;
+        line-height: 1em;
+    }
+</style>
+
+<div class="preloader">
+    <h2 class="ml13">
+        溯吾百纳
+    </h2>
+    <script>
+        var textWrapper = document.querySelector('.ml13');
+        // Split text into words
+        var words = textWrapper.textContent.trim().split(' ');
+
+        // Clear the existing content
+        textWrapper.innerHTML = '';
+
+        // Wrap each word and its letters in spans
+        words.forEach(function(word) {
+            var wordSpan = document.createElement('span');
+            wordSpan.classList.add('word');
+            wordSpan.innerHTML = word.replace(/\S/g, "<span class='letter'>$&</span>");
+            textWrapper.appendChild(wordSpan);
+            textWrapper.appendChild(document.createTextNode(' ')); // Add space between words
+        });
+
+        var animation = anime.timeline({loop: true})
+            .add({
+                targets: '.ml13 .letter',
+                translateY: [40,0],
+                translateZ: 0,
+                opacity: [0,1],
+                filter: ['blur(5px)', 'blur(0px)'], // Starting from blurred to unblurred
+                easing: "easeOutExpo",
+                duration: 1400,
+                delay: (el, i) => 300 + 30 * i,
+            }).add({
+                targets: '.ml13 .letter',
+                translateY: [0,-40],
+                opacity: [1,0],
+                filter: ['blur(0px)', 'blur(5px)'], // Ending from unblurred to blurred
+                easing: "easeInExpo",
+                duration: 1200,
+                delay: (el, i) => 100 + 30 * i,
+                complete: function() {
+                    hidePreloader(); // Call hidePreloader after the animation completes
+                }
+            });
+
+        let themeStatus = JSON.parse(localStorage.getItem('REDEFINE-THEME-STATUS'))?.isDark;
+
+        // If the theme status is not found in local storage, check the preferred color scheme
+        if (themeStatus === undefined || themeStatus === null) {
+            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                themeStatus = 'dark';
+            } else {
+                themeStatus = 'light';
+            }
+        }
+
+        // Now you can use the themeStatus variable in your code
+        if (themeStatus) {
+            document.documentElement.style.setProperty('--preloader-background-color', '#202124');
+            document.documentElement.style.setProperty('--preloader-text-color', '#fff');
+        } else {
+            document.documentElement.style.setProperty('--preloader-background-color', '#fff');
+            document.documentElement.style.setProperty('--preloader-text-color', '#000');
+        }
+
+        window.addEventListener('load', function () {
+            setTimeout(hidePreloader, 5000); // Call hidePreloader after 5000 milliseconds if not already called by animation
+        });
+
+        function hidePreloader() {
+            var preloader = document.querySelector('.preloader');
+            preloader.style.opacity = '0';
+            setTimeout(function () {
+                preloader.style.display = 'none';
+            }, 200);
+        }
+    </script>
+</div>
+
+<main class="page-container" id="swup">
+
+    
+
+    <div class="main-content-container">
+
+
+        <div class="main-content-header">
+            <header class="navbar-container px-6 md:px-12">
+
+    <div class="navbar-content ">
+        <div class="left">
+            
+                <a class="logo-image" href="/">
+                    <img src="/favicon.ico">
+                </a>
+            
+            <a class="logo-title" href="/">
+                
+                溯吾百纳
+                
+            </a>
+        </div>
+
+        <div class="right">
+            <!-- PC -->
+            <div class="desktop">
+                <ul class="navbar-list">
+                    
+                        
+                            
+
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class=""
+                                   href="/"
+                                        >
+                                    <i class="fa-regular fa-house fa-fw"></i>
+                                    HOME
+                                    
+                                </a>
+
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                        
+                            
+
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class=""
+                                   href="/archives"
+                                        >
+                                    <i class="fa-regular fa-archive fa-fw"></i>
+                                    ARCHIVES
+                                    
+                                </a>
+
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                        
+                            
+
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class=""
+                                   href="/categories"
+                                        >
+                                    <i class="fa-regular fa-folder fa-fw"></i>
+                                    CATEGORIES
+                                    
+                                </a>
+
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                        
+                            
+
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class=""
+                                   href="/tags"
+                                        >
+                                    <i class="fa-regular fa-tags fa-fw"></i>
+                                    TAGS
+                                    
+                                </a>
+
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                        
+                            
+
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class=""
+                                   href="/about"
+                                        >
+                                    <i class="fa-regular fa-user fa-fw"></i>
+                                    ABOUT
+                                    
+                                </a>
+
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                    
+                        <li class="navbar-item search search-popup-trigger">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </li>
+                    
+                </ul>
+            </div>
+            <!-- Mobile -->
+            <div class="mobile">
+                
+                    <div class="icon-item search search-popup-trigger"><i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                
+                <div class="icon-item navbar-bar">
+                    <div class="navbar-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile sheet -->
+    <div class="navbar-drawer h-screen w-full absolute top-0 left-0 bg-background-color flex flex-col justify-between">
+        <ul class="drawer-navbar-list flex flex-col px-4 justify-center items-start">
+            
+                
+                    
+
+                    <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
+                        
+                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full "
+                           href="/"
+                        >
+                            <span>
+                                HOME
+                            </span>
+                            
+                                <i class="fa-regular fa-house fa-sm fa-fw"></i>
+                            
+                        </a>
+                        
+
+                        
+                    </li>
+            
+                
+                    
+
+                    <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
+                        
+                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full "
+                           href="/archives"
+                        >
+                            <span>
+                                ARCHIVES
+                            </span>
+                            
+                                <i class="fa-regular fa-archive fa-sm fa-fw"></i>
+                            
+                        </a>
+                        
+
+                        
+                    </li>
+            
+                
+                    
+
+                    <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
+                        
+                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full "
+                           href="/categories"
+                        >
+                            <span>
+                                CATEGORIES
+                            </span>
+                            
+                                <i class="fa-regular fa-folder fa-sm fa-fw"></i>
+                            
+                        </a>
+                        
+
+                        
+                    </li>
+            
+                
+                    
+
+                    <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
+                        
+                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full "
+                           href="/tags"
+                        >
+                            <span>
+                                TAGS
+                            </span>
+                            
+                                <i class="fa-regular fa-tags fa-sm fa-fw"></i>
+                            
+                        </a>
+                        
+
+                        
+                    </li>
+            
+                
+                    
+
+                    <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
+                        
+                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full "
+                           href="/about"
+                        >
+                            <span>
+                                ABOUT
+                            </span>
+                            
+                                <i class="fa-regular fa-user fa-sm fa-fw"></i>
+                            
+                        </a>
+                        
+
+                        
+                    </li>
+            
+
+            
+            
+                
+                    
+                    
+                    
+            
+        </ul>
+
+        <div class="statistics flex justify-around my-2.5">
+    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/tags">
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">3</div>
+        <div class="label text-third-text-color text-sm">Tags</div>
+    </a>
+    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/categories">
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">2</div>
+        <div class="label text-third-text-color text-sm">Categories</div>
+    </a>
+    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/archives">
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">3</div>
+        <div class="label text-third-text-color text-sm">Posts</div>
+    </a>
+</div>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="main-content-body">
+
+            
+
+            <div class="main-content">
+
+                
+                    <div class="post-page-container flex relative justify-between box-border w-full h-full">
+    <div class="article-content-container">
+
+        <div class="article-title relative w-full">
+            
+                <div class="w-full flex items-center pt-6 justify-start">
+                    <h1 class="article-title-regular text-second-text-color tracking-tight text-4xl md:text-6xl font-semibold px-2 sm:px-6 md:px-8 py-3">探测器前端电子学</h1>
+                </div>
+            
+            </div>
+
+        
+            <div class="article-header flex flex-row gap-2 items-center px-2 sm:px-6 md:px-8">
+                <div class="avatar w-[46px] h-[46px] flex-shrink-0 rounded-medium border border-border-color p-[1px]">
+                    <img src="/favicon.ico">
+                </div>
+                <div class="info flex flex-col justify-between">
+                    <div class="author flex items-center">
+                        <span class="name text-default-text-color text-lg font-semibold">陈</span>
+                        
+                    </div>
+                    <div class="meta-info">
+                        <div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        <i class="fa-regular fa-pen-fancy"></i>&nbsp;
+        <span class="desktop">2023-09-05 14:14:50</span>
+        <span class="mobile">2023-09-05 14:14:50</span>
+        <span class="hover-info">Created</span>
+    </span>
+    
+        <span class="article-date article-meta-item">
+            <i class="fa-regular fa-wrench"></i>&nbsp;
+            <span class="desktop">2024-06-29 02:02:33</span>
+            <span class="mobile">2024-06-29 02:02:33</span>
+            <span class="hover-info">Updated</span>
+        </span>
+    
+
+    
+        <span class="article-categories article-meta-item">
+            <i class="fa-regular fa-folders"></i>&nbsp;
+            <ul>
+                
+                
+                    
+                        
+                        <li>
+                            <a href="/categories/%E8%AF%BB%E5%87%BA%E7%94%B5%E5%AD%90%E5%AD%A6/">读出电子学</a>&nbsp;
+                        </li>
+                    
+                    
+                
+            </ul>
+        </span>
+    
+    
+        <span class="article-tags article-meta-item">
+            <i class="fa-regular fa-tags"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/tags/%E7%94%B5%E5%AD%90%E5%AD%A6/">电子学</a>&nbsp;
+                    </li>
+                
+                    <li>
+                        | <a href="/tags/%E6%8E%A2%E6%B5%8B%E5%99%A8/">探测器</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+
+    
+    
+    
+    
+        <span class="article-pv article-meta-item">
+            <i class="fa-regular fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+        </span>
+    
+</div>
+
+                    </div>
+                </div>
+            </div>
+        
+
+        
+
+
+        <div class="article-content markdown-body px-2 sm:px-6 md:px-8 pb-8">
+            <h2 id="信号到数据的转换"><a href="#信号到数据的转换" class="headerlink" title="信号到数据的转换"></a>信号到数据的转换</h2><h3 id="前端电子的主要功能和触发系统"><a href="#前端电子的主要功能和触发系统" class="headerlink" title="前端电子的主要功能和触发系统"></a>前端电子的主要功能和触发系统</h3><h4 id="前端电子学的功能"><a href="#前端电子学的功能" class="headerlink" title="前端电子学的功能"></a>前端电子学的功能</h4><p>前端电子学的主要功能就是抽取粒子探测器输出电信号的某些特征，转换为能够反映粒子特性的数据，供在线计算机读取和记录。</p>
+<h4 id="系统读出的死时间"><a href="#系统读出的死时间" class="headerlink" title="系统读出的死时间"></a>系统读出的死时间</h4><p>信号到数据的转换、读取和记录过程需要较长的时间，若系统在前一个信号的处理过程中不能处理下一个信号，则会出现死时间。</p>
+<h4 id="触发系统"><a href="#触发系统" class="headerlink" title="触发系统"></a>触发系统</h4><ul>
+<li>前端电子学的探测信号经过初步处理后传递给触发系统作为触发判选的原始条件。</li>
+<li>触发系统根据在线计算机的信号来控制前端电子学的开放，或者进入复位状态。</li>
+<li>在可读取数据时，开放的前端电子学会返回在线计算机一个信号，使其读取可用数据，以及进行下一步的处理。在数据末尾，前端电子也会返回一个信号，使在线计算机停止记数。</li>
+<li>在数据处理过程中，在线计算通过触发系统使前端电子学进入复位等待状态。处理完之后，在线计算通过触发系统开放前端电子学。<br><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://z1.ax1x.com/2023/10/07/pPjY5Nj.png"
+                      alt="数据获取系统各部分的关系"
+                ></li>
+</ul>
+<h3 id="能量电荷转换与电荷测量"><a href="#能量电荷转换与电荷测量" class="headerlink" title="能量电荷转换与电荷测量"></a>能量电荷转换与电荷测量</h3><h4 id="探测器的能量电荷转换关系"><a href="#探测器的能量电荷转换关系" class="headerlink" title="探测器的能量电荷转换关系"></a>探测器的能量电荷转换关系</h4><p>粒子通过探测器时使探测器产生电离、激发或光电转换等过程。输出信号的电荷量往往正比于粒子在探测器中消耗掉的能量。设粒子在探测器中消耗掉的能量为$E$，得到的电子电荷的平均数为$N$，探测器的平均能量-电荷转换系数为$\theta$（对于一定的探测器，$\theta$是常数），则有$$N &#x3D; \theta E$$</p>
+<h4 id="电荷测量"><a href="#电荷测量" class="headerlink" title="电荷测量"></a>电荷测量</h4><p>电荷测量的一般方法是先将待测的电荷转换成电压（QAC），再将电压模拟量转换成数字量（ADC）。探测器的输出阻抗往往比后接电路的输入阻抗大得多，可以等效为一个电流源。在QAC中，可以让探测器的输出电流$i$对一个固定电容$C$充电实现电荷电压转换：$$\int idt &#x3D; Q &#x3D; CU$$</p>
+<h3 id="QAC的三种的方法"><a href="#QAC的三种的方法" class="headerlink" title="QAC的三种的方法"></a>QAC的三种的方法</h3><h4 id="电荷灵敏放大器方法"><a href="#电荷灵敏放大器方法" class="headerlink" title="电荷灵敏放大器方法"></a>电荷灵敏放大器方法</h4><p>根据负反馈放大器的原理，如果放大器的增益足够大，带宽足够宽，输入阻抗足够高，则放大器的输出电压$V_o$和输入电荷$Q_i$的关系为：$$V_o &#x3D; \frac{Q_i}{C_f}$$</p>
+<ul>
+<li>优势<br>  放大器的输入端并联了探测器的输出阻抗、放大器的输入阻抗以及分布电容由于虚地的影响，对输入电流的分流作用极小，使得放大器的输出电压和输入电荷一致性好，有很好的准确性和稳定性。</li>
+<li>劣势<br>  反馈电容没有电荷释放通路，每次信号到来时的输出为所有信号及漏电的叠加，产生堆积现象。当反馈电容积累的电荷足够多时，输出电压将超过放大器的动态范围。而且，如果输入信号中存在偏置电流，隔直电容漏电和探测器漏电等直流成分时，输出电压也会不断积累。</li>
+</ul>
+<p>如果在$C_f$上并联一个电阻$R_f$，则可使$C_f$上的电荷逐渐放掉，输出电压也会降下来。由于电阻$R$的存在，输入过程并非直流充电过程，输出脉冲的幅度不仅与输入电荷有关，而且与输入脉冲的宽度及时间常数$R_fC_f$有关。在相同输入电荷的情况下，输入脉冲越宽，时间常数越小，输出电压脉冲的幅度越小，这称为“弹道亏损”现象。</p>
+<p>当输出电压上升到最大值$V_{max}$后，输出电压下降到$1&#x2F;e$的时间为时间常数$R_fC_f$，其下降过程为指数过程$$v(t) &#x3D; V_{max}e^{-t&#x2F;RC}$$<br><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://z1.ax1x.com/2023/10/07/pPjYfHg.png"
+                      alt="电荷灵敏放大器"
+                ></p>
+<h4 id="电压灵敏放大器方法"><a href="#电压灵敏放大器方法" class="headerlink" title="电压灵敏放大器方法"></a>电压灵敏放大器方法</h4><p>电压灵敏放大的方法是放大器的输入端直接接入探测器的输出端，通过放大器的输入端并联的探测器的输出电容$C_D$，放大器的输入电容$C_A$以及分布电容$C_S$来达到电荷到电压的转换。由于杂散电容的不稳定性，这种方法的稳定性较差。虽然可以通过并联一个较大的固定电容来改善稳定性，但这又降低了信号幅度，对信噪比不利。<br><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://z1.ax1x.com/2023/10/07/pPjYgjf.png"
+                      alt="电压灵敏放大器"
+                ></p>
+<h4 id="电流灵敏放大器方法"><a href="#电流灵敏放大器方法" class="headerlink" title="电流灵敏放大器方法"></a>电流灵敏放大器方法</h4><p>把一个电流放大器接在探测器和积分电容之间，可以利用放大器输入阻抗小，输出阻抗大以及具有放大能力的特点，实现信号转换的稳定性。配合较大的积分电容可以减小杂散电容对输出的影响。但输入电流脉宽很窄，要求放大器很大的带宽，成本较高，对于单纯的电荷转换来说性价比不好。</p>
+<p>在需要同时测量电荷量与时间的情况下，可以先对信号进行电流电压转换，然后一路借到甄别器获取时间信息，一路进行电压电流转换后接到积分电容获取电荷信息。其中电流-电压，电压-电路转换能够实现放大，等效于一个电流放大器，实现电流灵敏放大的方法。<br><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://z1.ax1x.com/2023/10/07/pPjYTCn.png"
+                      alt="同时测量电荷和时间"
+                ></p>
+<h3 id="ADC的三种的方法"><a href="#ADC的三种的方法" class="headerlink" title="ADC的三种的方法"></a>ADC的三种的方法</h3><h4 id="Flash-ADC-FADC"><a href="#Flash-ADC-FADC" class="headerlink" title="Flash ADC(FADC)"></a>Flash ADC(FADC)</h4><p>一个测量范围为$U_m$的m位FADC通过无源网络产生$2^m-1$个等差电压节点，一个节点的电压以及节点之间的压差为$U_m&#x2F;2^m$，每个节点输入一个甄别器，一共$2^m-1$个甄别器。按节点电压从小到大编号甄别器，定位输出为1的甄别器的最大编号n，ADC就可以得到对应十进制n的m位二进制输出。这样的方法速度极快，但是需要大量元件，而且随着数位宽度逐倍增加。</p>
+<h4 id="逐次比较ADC"><a href="#逐次比较ADC" class="headerlink" title="逐次比较ADC"></a>逐次比较ADC</h4><p>逐次比较ADC实际上二分法对应的硬件结构。从最高位数置1开始逐位置1，然后通过DAC对结果转换产生比较电压接入甄别器，输入电压较大时该位数置0，输入电压较小时该位数置1，直至末尾然后输出m位二进制输出。逐次比较ADC元器件使用量比FADC<br>要少得多，但由于是串行输出，工作频率要比FADC低。</p>
+<h4 id="分级ADC"><a href="#分级ADC" class="headerlink" title="分级ADC"></a>分级ADC</h4><p>分级FADC实际上串并行结合，把m位数码等分成块，先从高位数块开始，每一块数码通过FADC进行转换，输入减去高位数块的结果后送入低位数块最后实现ADC的m位二进制输出。这是一种这种的方法，能够兼顾速度和成本。</p>
+<h3 id="定时甄别的三种方法"><a href="#定时甄别的三种方法" class="headerlink" title="定时甄别的三种方法"></a>定时甄别的三种方法</h3><h4 id="前沿触发定时"><a href="#前沿触发定时" class="headerlink" title="前沿触发定时"></a>前沿触发定时</h4><p>实际的信号都有一定的上升时间，可以用脉冲幅度甄别器来确定信号上升沿某一个电压值的出现时刻。当待测信号前沿上等于甄别阈电压时，甄别器置1，精确的定时甄别应该采用输出逻辑信号前沿和延迟都很小的高速甄别器件。</p>
+<p>输入信号有一定的噪声，为了避免噪声触发甄别器，甄别阈值不能设置得太低，导致定时信号和探测器输出有一定得时间差。由于探测器输出信号的幅度和波形都是随机的，信号不同的上升速度使得阈值导致的定时误差也是随机变化的，这种现象称为<strong>时间游动</strong>。前沿触发定时无法消除时间游动。<br><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://z1.ax1x.com/2023/10/07/pPjY4EQ.png"
+                      alt="前沿触发定时电路"
+                ></p>
+<h4 id="过零定时"><a href="#过零定时" class="headerlink" title="过零定时"></a>过零定时</h4><p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://z1.ax1x.com/2023/10/07/pPjY73q.png"
+                      alt="有过零点的双向信号"
+                ><br>如果信号是双向的，且信号的起始与过零的时间差不随信号幅度的变化，可以通过双向触发信号的差得到定时输出。假如输入信号是先为负值，后为正值的双向过零信号，通过预甄别器产生输入信号小于零比较的触发信号，触发信号展宽后作为使能控制过零甄别进行大于零比较，在使能信号的末端或者信号低于阈值时置零，从而在输出端输出较为准确的定时信号。这样的方法需要设法消除叠加在基线上的噪声的误触发。对于单极性信号，则可以通过微分电路转换为双极性信号进行定时。<br><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://z1.ax1x.com/2023/10/07/pPjYI4s.png"
+                      alt="过零定时电路"
+                ></p>
+<h4 id="恒比定时"><a href="#恒比定时" class="headerlink" title="恒比定时"></a>恒比定时</h4><p>恒比定时是另一种减少时间游动的方法。如果探测器的输出信号是与幅度无关的$AF(t)（|F_{max}(t)|&lt;&#x3D;1）$，可以把输入分两路分别通过延迟时间为$t_d$的延时器和衰减系数为$q$的衰减器，然后分别输入甄别器的正端和负端。甄别点$t_0$满足$$AF(t-t_d) &#x3D; qAF(t), q&lt;1 \Rightarrow F(t-t_0)&#x3D;qF(t_0)$$显然，$t_0$与信号幅度无关，仅与波形有关，可知甄别阈值以及甄别阈值与幅度的比值为$$V_t&#x3D;qAF(t_0) \quad p &#x3D; V_T&#x2F;A &#x3D; qF(t_0)$$ 甄别阈值和幅度的比值是一个的常数，即恒必定时。为使甄别阈大于零，$t_d$必须比信号的底宽$t_w$小。</p>
+<p>如果$t_d$比信号最大值的出现时间$t_m$小，则甄别点有可能既落在信号$AF(t-t_d)$的前沿上，又落在信号$qAF(t)$的前沿上。当$t_d$和$q$都很小时，甄别点$t_0$离两个波形的起始点都很近。许多波形可看作一系列不同时间常数的指数常数的线性组合。当$t_0$离波形的起始点很近时，指数函数可以用一条直线来近似，即：$$F(t)&#x3D;A_0 - A_1e^{-t&#x2F;\tau_1} - A_2e^{-t\tau_2}-\cdots$$因为$A_0-A_1-A_2-\cdots&#x3D;0$，当$t$比$\tau_1,\tau_2,\cdots$中的最小值还要小很多时$$F(t)\approx (A_1&#x2F;\tau+A_2&#x2F;\tau_2+\cdots)t&#x3D;mt \quad \Rightarrow \quad Am(t_0-t_d)&#x3D;qAmt_0$$因此$$t_0 &#x3D; t_d&#x2F;(1-q)$$也就是说定时点与幅度$A$及波形(前沿的上升速度$m$)都没有关系，即法使幅度和上升时间造成的时间游动都得以补偿，称为<strong>幅度和上升时间补偿定时</strong>。它是恒比定时的一个特例。</p>
+<p>如果我们观察恒比定时甄别器正负两端之间的电压差$V_D(t)$，有$$V_D(t)&#x3D;AF(t-t_d)-qAF(t)&#x3D;A[F(t-t_d)-qF(t)]$$ $V_D(t)$是一个幅度系数为$A$的双极性过零信号。当$V_D(t)&#x3D;0$时，甄别器被触发输出，也就是恒比定时本质上是过零定时。</p>
+<p>为了获得比较好的性能，要对恒比定时的延迟和衰减对不同的信号波形进行细致的调节。调节不当不但性能差，甚至不能正常工作。当延迟时间$t_d$大于信号宽度$t_w$时，构成$V_D(t)$的正负两个信号分离，无法行程陡峭的过零点，可能出现乱定时。当$t_d$和$q$太小时，$V_D(t)$的负幅度太小，甄别器容易被噪声和其他干扰信号误触发。<br><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://z1.ax1x.com/2023/10/07/pPjYWDS.png"
+                      alt="恒比定时电路"
+                ></p>
+<h3 id="TDC的三种方法"><a href="#TDC的三种方法" class="headerlink" title="TDC的三种方法"></a>TDC的三种方法</h3><p>定时甄别电路检出待测信号参考信号的出现时刻后，分别形成一个Start信号和一个Stop信号，可以通过数字变换（TDC）电路将Start信号和Stop信号之间的时间间隔变成数码，供计算机读出。</p>
+<p>一般来说，早出现的物理事件产生Start信号，晚出现的物理时间产生Stop信号，也可以将早出现的物理事件加上一个足够大的固定的延迟以后作为Stop信号。固定的延迟时间减去测得的时间间隔就是原来的时间间隔。</p>
+<h4 id="计数式时间数字变换"><a href="#计数式时间数字变换" class="headerlink" title="计数式时间数字变换"></a>计数式时间数字变换</h4><p>这种TDC的基本原理是在Start和Stop信号的时间间隔内，用计数器测量一个频率稳定的振荡器的周期数。待测的时间间隔就是测得的周期数与振荡器周期的乘积。测量精度与频率精度有关，在进行小时间间隔测量时，要求振荡器有很高的频率，否则计数器无法获得足够的计数，无法保证精度。</p>
+<h4 id="带游标的计数式时间数字变换"><a href="#带游标的计数式时间数字变换" class="headerlink" title="带游标的计数式时间数字变换"></a>带游标的计数式时间数字变换</h4><p>计数式TDC存在震荡频率和测量精度的矛盾。粒子探测器要求几十皮秒到纳秒的分辨率，至少应有1GHz以上的振荡频率。这样高频率的振荡器和计数器都很难制造。为了解决这个问题，有人提出了带游标的计数式时间数字变换方法。如果振荡器的周期为10ns，游标之间的时间间隔为1ns，则100MHz的振荡器和计数器就可以得到1ns的分辨率。</p>
+<p>将一个周期为10ns的振荡信号延迟10次，每次延迟1ns，可以得到10个一次错开1ns的振荡波形。每个振荡波形分别与待测信号符合，在待测信号到达的时刻可以得到一组10bit的二进制数码。对这个数码按一定的规则进行编码，就可以得到待测信号符合，在待测信号到达的时刻可以得到一组10bit的二进制数码。对这个数码按一定的规则进行编码，就可以得到待测信号在该周期中的游标时间，误差为1ns。总时间为周期计数器测定的时间和游标时间的和。这种能够产生一系列延迟振荡波形的振荡器是有多个延迟单元的环形振荡器或延迟线锁相环，延迟单元的延迟时间可以由控制电压调节。可以采用锁相的方法将环形振荡器的周期或延迟线的总延迟时间锁定在一个精确的周期上，以保证时间分割的准确度。</p>
+<h4 id="时间幅度变换-TAC"><a href="#时间幅度变换-TAC" class="headerlink" title="时间幅度变换(TAC)"></a>时间幅度变换(TAC)</h4><p>另一种测量小时间间隔的方法是先将时间信息变换成幅度信息（TAC），再将幅度信息变换成数字信息（ADC）。</p>
+<p>用一个恒流源对一个固定电容充电，可以实现时间幅度变换。假定恒流源的电流为$I$，固定电容为$C$，电容上的起始电压为零，经过时间$t$后电容上的电压为$U$，则$$U&#x3D;\frac{I\times t}{C}$$使Start信号启动充电过程，而使Stop信号终止充电过程，则电容上的电压与Start信号和Stop信号之间的时间间隔成正比，用ADC测量这个电压得到的数字量也必然与时间间隔成正比。当然，每次测量结束后要及时将电容放电，为下一次测量做好准备。</p>
+<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><p>[1]谢一冈.粒子探测器与数据获取[J].科学出版社, 2003.<br>[2]Inc A D .Data conversion handbook[M]. 2004.</p>
+
+        </div>
+
+        
+            <div class="post-copyright-info w-full my-8 px-2 sm:px-6 md:px-8">
+                <div class="article-copyright-info-container">
+    <ul>
+        <li><strong>Title:</strong> 探测器前端电子学</li>
+        <li><strong>Author:</strong> 陈</li>
+        <li><strong>Created at
+                :</strong> 2023-09-05 14:14:50</li>
+        
+            <li>
+                <strong>Updated at
+                    :</strong> 2024-06-29 02:02:33
+            </li>
+        
+        <li>
+            <strong>Link:</strong> https://www.sawubona.cn/2023/09/05/探测器前端电子学/
+        </li>
+        <li>
+            <strong>
+                License:
+            </strong>
+            
+
+            
+                This work is licensed under <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0">CC BY-NC-SA 4.0</a>.
+            
+        </li>
+    </ul>
+</div>
+
+            </div>
+        
+
+        
+            <ul class="post-tags-box text-lg mt-1.5 flex-wrap justify-center flex md:hidden">
+                
+                    <li class="tag-item mx-0.5">
+                        <a href="/tags/%E7%94%B5%E5%AD%90%E5%AD%A6/">#电子学</a>&nbsp;
+                    </li>
+                
+                    <li class="tag-item mx-0.5">
+                        <a href="/tags/%E6%8E%A2%E6%B5%8B%E5%99%A8/">#探测器</a>&nbsp;
+                    </li>
+                
+            </ul>
+        
+
+        
+
+        
+            <div class="article-nav my-8 flex justify-between items-center px-2 sm:px-6 md:px-8">
+                
+                    <div class="article-prev border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
+                        <a class="prev"
+                        rel="prev"
+                        href="/2023/09/23/%E5%9F%BA%E4%BA%8E%E4%BA%A4%E5%8F%89%E6%9D%A1%E9%98%B3%E6%9E%81MCP%E7%9A%84%E7%99%BD%E5%85%89%E4%B8%AD%E5%AD%90%E5%85%B1%E6%8C%AF%E6%88%90%E5%83%8F%E7%B3%BB%E7%BB%9F%E8%AF%BB%E5%87%BA%E7%94%B5%E5%AD%90%E5%AD%A6%E8%AE%BE%E8%AE%A1/"
+                        >
+                            <span class="left arrow-icon flex justify-center items-center">
+                                <i class="fa-solid fa-chevron-left"></i>
+                            </span>
+                            <span class="title flex justify-center items-center">
+                                <span class="post-nav-title-item">基于交叉条阳极MCP的白光中子共振成像系统读出电子学设计</span>
+                                <span class="post-nav-item">Prev posts</span>
+                            </span>
+                        </a>
+                    </div>
+                
+                
+                    <div class="article-next border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
+                        <a class="next"
+                        rel="next"
+                        href="/2023/09/04/twikoo%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F%E7%A7%81%E6%9C%89%E9%83%A8%E7%BD%B2/"
+                        >
+                            <span class="title flex justify-center items-center">
+                                <span class="post-nav-title-item">Twikoo评论系统私有部署</span>
+                                <span class="post-nav-item">Next posts</span>
+                            </span>
+                            <span class="right arrow-icon flex justify-center items-center">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </span>
+                        </a>
+                    </div>
+                
+            </div>
+        
+
+
+        
+            <div class="comment-container px-2 sm:px-6 md:px-8 pb-8">
+                <div class="comments-container mt-10 w-full ">
+    <div id="comment-anchor" class="w-full h-2.5"></div>
+    <div class="comment-area-title w-full my-1.5 md:my-2.5 text-xl md:text-3xl font-bold">
+        Comments
+    </div>
+    
+
+        
+            
+    <div class="twikoo-container">
+        <script 
+                src='https://cdn.staticfile.org/twikoo/1.6.21/twikoo.all.min.js'
+        ></script>
+        <div id="twikoo-comment"></div>
+        <script >
+            function loadTwikoo() {
+                twikoo.init({
+                    el: '#twikoo-comment',
+                    envId: 'https://twikoo.sawubona.cn',
+                });
+            }
+
+            if ('false') {
+                const loadTwikooTimeout = setTimeout(() => {
+                    loadTwikoo();
+                    clearTimeout(loadTwikooTimeout);
+                }, 1000);
+            } else {
+                window.addEventListener('DOMContentLoaded', loadTwikoo);
+            }
+        </script>
+    </div>
+
+
+        
+        
+    
+</div>
+
+            </div>
+        
+    </div>
+
+    
+        <div class="toc-content-container">
+            <div class="post-toc-wrap">
+    <div class="post-toc">
+        <div class="toc-title">On this page</div>
+        <div class="page-title">探测器前端电子学</div>
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BF%A1%E5%8F%B7%E5%88%B0%E6%95%B0%E6%8D%AE%E7%9A%84%E8%BD%AC%E6%8D%A2"><span class="nav-text">信号到数据的转换</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%89%8D%E7%AB%AF%E7%94%B5%E5%AD%90%E7%9A%84%E4%B8%BB%E8%A6%81%E5%8A%9F%E8%83%BD%E5%92%8C%E8%A7%A6%E5%8F%91%E7%B3%BB%E7%BB%9F"><span class="nav-text">前端电子的主要功能和触发系统</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%83%BD%E9%87%8F%E7%94%B5%E8%8D%B7%E8%BD%AC%E6%8D%A2%E4%B8%8E%E7%94%B5%E8%8D%B7%E6%B5%8B%E9%87%8F"><span class="nav-text">能量电荷转换与电荷测量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#QAC%E7%9A%84%E4%B8%89%E7%A7%8D%E7%9A%84%E6%96%B9%E6%B3%95"><span class="nav-text">QAC的三种的方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ADC%E7%9A%84%E4%B8%89%E7%A7%8D%E7%9A%84%E6%96%B9%E6%B3%95"><span class="nav-text">ADC的三种的方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%9A%E6%97%B6%E7%94%84%E5%88%AB%E7%9A%84%E4%B8%89%E7%A7%8D%E6%96%B9%E6%B3%95"><span class="nav-text">定时甄别的三种方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#TDC%E7%9A%84%E4%B8%89%E7%A7%8D%E6%96%B9%E6%B3%95"><span class="nav-text">TDC的三种方法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE"><span class="nav-text">参考文献</span></a></li></ol>
+
+    </div>
+</div>
+        </div>
+    
+</div>
+
+
+
+                
+
+            </div>
+
+            
+
+        </div>
+
+        <div class="main-content-footer">
+            <footer class="footer mt-5 py-5 h-auto text-base text-third-text-color relative border-t-2 border-t-border-color">
+    <div class="info-container py-3 text-center">
+        
+        <div class="text-center">
+            &copy;
+            
+              <span>2023</span>
+              -
+            
+            2024&nbsp;&nbsp;<i class="fa-solid fa-bahai fa-spin" style="--fa-animation-duration: 5s; color: #c0b321;"></i>&nbsp;&nbsp;<a href="/">陈</a>
+            
+        </div>
+        
+            <script  src="https://cn.vercount.one/js"></script>
+            <div class="relative text-center lg:absolute lg:right-[20px] lg:top-1/2 lg:-translate-y-1/2 lg:text-right">
+                
+                    <span id="busuanzi_container_site_uv" class="lg:!block">
+                        <span class="text-sm">VISITOR COUNT</span>
+                        <span id="busuanzi_value_site_uv"></span>
+                    </span>
+                
+                
+                    <span id="busuanzi_container_site_pv" class="lg:!block">
+                        <span class="text-sm">TOTAL PAGE VIEWS</span>
+                        <span id="busuanzi_value_site_pv"></span>
+                    </span>
+                
+            </div>
+        
+        <div class="relative text-center lg:absolute lg:left-[20px] lg:top-1/2 lg:-translate-y-1/2 lg:text-left">
+            <span class="lg:block text-sm">POWERED BY <?xml version="1.0" encoding="utf-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg class="relative top-[2px] inline-block align-baseline" version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1rem" height="1rem" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve"><path fill="#0E83CD" d="M256.4,25.8l-200,115.5L56,371.5l199.6,114.7l200-115.5l0.4-230.2L256.4,25.8z M349,354.6l-18.4,10.7l-18.6-11V275H200v79.6l-18.4,10.7l-18.6-11v-197l18.5-10.6l18.5,10.8V237h112v-79.6l18.5-10.6l18.5,10.8V354.6z"/></svg><a target="_blank" class="text-base" href="https://hexo.io">Hexo</a></span>
+            <span class="text-sm lg:block">THEME&nbsp;<a class="text-base" target="_blank" href="https://github.com/EvanNotFound/hexo-theme-redefine">Redefine v2.6.4</a></span>
+        </div>
+        
+        
+            <div>
+                Blog up for <span class="odometer" id="runtime_days" ></span> days <span class="odometer" id="runtime_hours"></span> hrs <span class="odometer" id="runtime_minutes"></span> Min <span class="odometer" id="runtime_seconds"></span> Sec
+            </div>
+        
+        
+            <script >
+                try {
+                    function odometer_init() {
+                    const elements = document.querySelectorAll('.odometer');
+                    elements.forEach(el => {
+                        new Odometer({
+                            el,
+                            format: '( ddd).dd',
+                            duration: 200
+                        });
+                    });
+                    }
+                    odometer_init();
+                } catch (error) {}
+            </script>
+        
+        
+            
+                
+        
+                
+        
+                
+
+                    
+                        <a target="_blank" rel="noopener" href="https://beian.miit.gov.cn/">陕ICP备2023011351号</a>
+                
+        
+        
+    </div>  
+</footer>
+        </div>
+    </div>
+
+    
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="article-tools-list">
+        <!-- TOC aside toggle -->
+        
+            <li class="right-bottom-tools page-aside-toggle">
+                <i class="fa-regular fa-outdent"></i>
+            </li>
+        
+
+        <!-- go comment -->
+        
+            <li class="go-comment">
+                <i class="fa-regular fa-comments"></i>
+            </li>
+        
+    </ul>
+</div>
+
+        </div>
+    
+
+    <div class="right-side-tools-container">
+        <div class="side-tools-container">
+    <ul class="hidden-tools-list">
+        <li class="right-bottom-tools tool-font-adjust-plus flex justify-center items-center">
+            <i class="fa-regular fa-magnifying-glass-plus"></i>
+        </li>
+
+        <li class="right-bottom-tools tool-font-adjust-minus flex justify-center items-center">
+            <i class="fa-regular fa-magnifying-glass-minus"></i>
+        </li>
+
+        <li class="right-bottom-tools tool-dark-light-toggle flex justify-center items-center">
+            <i class="fa-regular fa-moon"></i>
+        </li>
+
+        <!-- rss -->
+        
+
+        
+
+        <li class="right-bottom-tools tool-scroll-to-bottom flex justify-center items-center">
+            <i class="fa-regular fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="visible-tools-list">
+        <li class="right-bottom-tools toggle-tools-list flex justify-center items-center">
+            <i class="fa-regular fa-cog fa-spin"></i>
+        </li>
+        
+            <li class="right-bottom-tools tool-scroll-to-top flex justify-center items-center">
+                <i class="arrow-up fas fa-arrow-up"></i>
+                <span class="percent"></span>
+            </li>
+        
+        
+    </ul>
+</div>
+
+    </div>
+
+    <div class="image-viewer-container">
+    <img src="">
+</div>
+
+
+    
+        <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+          <span class="search-input-field-pre">
+            <i class="fa-solid fa-keyboard"></i>
+          </span>
+            <div class="search-input-container">
+                <input autocomplete="off"
+                       autocorrect="off"
+                       autocapitalize="off"
+                       placeholder="Search..."
+                       spellcheck="false"
+                       type="search"
+                       class="search-input"
+                >
+            </div>
+            <span class="popup-btn-close">
+                <i class="fa-solid fa-times"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fa-solid fa-spinner fa-spin-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+</main>
+
+
+
+
+
+
+<script src="/js/tools/imageViewer.js" type="module"></script>
+
+<script src="/js/utils.js" type="module"></script>
+
+<script src="/js/main.js" type="module"></script>
+
+<script src="/js/layouts/navbarShrink.js" type="module"></script>
+
+<script src="/js/tools/scrollTopBottom.js" type="module"></script>
+
+<script src="/js/tools/lightDarkSwitch.js" type="module"></script>
+
+<script src="/js/layouts/categoryList.js" type="module"></script>
+
+
+
+    
+<script src="/js/tools/localSearch.js" type="module"></script>
+
+
+
+
+    
+<script src="/js/tools/codeBlock.js" type="module"></script>
+
+
+
+
+    
+<script src="/js/layouts/lazyload.js" type="module"></script>
+
+
+
+
+    
+<script src="/js/tools/runtime.js"></script>
+
+    
+<script src="/js/libs/odometer.min.js"></script>
+
+    
+<link rel="stylesheet" href="/assets/odometer-theme-minimal.css">
+
+
+
+
+  
+<script src="/js/libs/Typed.min.js"></script>
+
+  
+<script src="/js/plugins/typed.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+<div class="post-scripts" >
+    
+        
+<script src="/js/tools/tocToggle.js" type="module"></script>
+
+<script src="/js/layouts/toc.js" type="module"></script>
+
+<script src="/js/plugins/tabs.js" type="module"></script>
+
+    
+</div>
+
+
+</body>
+</html>
