@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ''
-description: ''
+title: 溯吾百纳
+subtitle: 
+description: 陈☀的个人网站
 keywords:
-author: John Doe
+author: 陈
 language: en
-timezone: ''
+timezone:
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: https://www.sawubona.cn
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -31,8 +31,8 @@ i18n_dir: :lang
 skip_render:
 
 # Writing
-new_post_name: :title.md # File name of new posts
-default_layout: post
+new_post_name: ::year-:month-:day-:title.md # File name of new posts
+default_layout: draft
 titlecase: false # Transform title into titlecase
 external_link:
   enable: true # Open external links in new tab
@@ -43,14 +43,15 @@ render_drafts: false
 post_asset_folder: false
 relative_link: false
 future: true
-syntax_highlighter: highlight.js
 highlight:
+  enable: true
   line_number: true
   auto_detect: false
   tab_replace: ''
   wrap: true
   hljs: false
 prismjs:
+  enable: false
   preprocess: true
   line_number: true
   tab_replace: ''
@@ -97,8 +98,20 @@ ignore:
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: redefine
+# theme: butterfly
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
+  type: git
+  repo: git@121.36.201.18:/home/git/sawubona.git
+  branch: master
+
+# Mathematical formula
+mathjax:
+  tags: none               # or 'ams' or 'all'
+  single_dollars: true     # enable single dollar signs as in-line math delimiters
+  cjk_width: 0.9           # relative CJK char width
+  normal_width: 0.6        # relative normal (monospace) width
+  append_css: true         # add CSS to every page
+  every_page: false        # if true, every page will be rendered by mathjax regardless the `mathjax` setting in Front-matter of each article
