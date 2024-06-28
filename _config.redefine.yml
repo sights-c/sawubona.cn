@@ -72,7 +72,7 @@ global:
     site_uv: true # site unique visitor
     post_pv: true # post page view
   # Whether to enable single page experience (using swup). See https://swup.js.org/. similar to pjax
-  single_page: false
+  single_page: true
   # Whether to enable Preloader.
   preloader: true
   # Whether to enable open graph
@@ -363,7 +363,7 @@ footer:
   customize: 
   # ICP record number. See https://beian.miit.gov.cn/
   icp:
-    enable: false # Whether to enable
+    enable: # Whether to enable
     number: 陕ICP备2023011351号 # ICP record number
     url: https://beian.miit.gov.cn/ # ICP record url
 # FOOTER <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
