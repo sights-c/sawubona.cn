@@ -72,7 +72,7 @@ global:
     site_uv: true # site unique visitor
     post_pv: true # post page view
   # Whether to enable single page experience (using swup). See https://swup.js.org/. similar to pjax
-  single_page: true
+  single_page: false
   # Whether to enable Preloader.
   preloader: true
   # Whether to enable open graph
@@ -111,7 +111,8 @@ home_banner:
   title: Sawubona
   # Home banner subtitle
   subtitle:
-    text: [I see you, and by seeing you, I bring you into being.] # subtitle text, array
+    text:
+    # text: [I see you, and by seeing you, I bring you into being.] # subtitle text, array
     hitokoto:  # 一言配置
       enable: false # Whether to enable hitokoto
       api: https://v1.hitokoto.cn # API URL, can add types, see https://developer.hitokoto.cn/sentence/#%E5%8F%A5%E5%AD%90%E7%B1%BB%E5%9E%8B-%E5%8F%82%E6%95%B0
