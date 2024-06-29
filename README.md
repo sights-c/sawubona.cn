@@ -2,3 +2,5 @@
 
 A static website powered by HEXO.
 Theme redefine v2.6.4
+
+- Generate before deploy
