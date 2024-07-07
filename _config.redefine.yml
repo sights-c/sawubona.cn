@@ -70,13 +70,13 @@ global:
     enable: true # enable website counter or not
     site_pv: true # site page view
     site_uv: true # site unique visitor
-    post_pv: true # post page view
+    post_pv: false # post page view
   # Whether to enable single page experience (using swup). See https://swup.js.org/. similar to pjax
   single_page: false
   # Whether to enable Preloader.
   preloader: true
   # Whether to enable open graph
-  open_graph: true
+  open_graph: false
   # Google Analytics
   google_analytics:
     enable: false # Whether to enable Google Analytics
