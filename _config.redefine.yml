@@ -70,11 +70,11 @@ global:
     enable: true # enable website counter or not
     site_pv: true # site page view
     site_uv: true # site unique visitor
-    post_pv: false # post page view
+    post_pv: true # post page view
   # Whether to enable single page experience (using swup). See https://swup.js.org/. similar to pjax
   single_page: false
   # Whether to enable Preloader.
-  preloader: true
+  preloader: false
   # Whether to enable open graph
   open_graph: false
   # Google Analytics
@@ -277,7 +277,7 @@ articles:
     copy: true # Whether to enable code block copy button
     style: mac # mac | simple
     font: # Custom font
-      enable: false # Whether to enable
+      enable: true # Whether to enable
       family: # Font family
       url: # Font URL to CSS file
   # Table of contents settings
@@ -292,7 +292,7 @@ articles:
     enable: true # Whether to enable
     default: cc_by_nc_sa # Default license, can be cc_by_nc_sa, cc_by_nd, cc_by_nc, cc_by_sa, cc_by, all_rights_reserved, public_domain
   # Whether to enable lazyload for images
-  lazyload: true
+  lazyload: false
   # Article recommendation. Requires nodejieba (npm install nodejieba). Transplanted from hexo-theme-volantis.
   recommendation:
     # Whether to enable article recommendation

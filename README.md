@@ -9,3 +9,4 @@ Plugins:
   - hexo-filter-mermaid-diagrams
   - hexo-all-minifier
   - hexo-filter-mathjax
+  - hexo-wordcount
