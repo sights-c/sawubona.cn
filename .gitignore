@@ -1,4 +1,10 @@
-public/
+# Refer to https://github.com/hexojs/hexo-starter/blob/master/.gitignore
 
-.deploy_git/
-.github
+.DS_Store
+Thumbs.db
+db.json
+*.log
+node_modules/
+public/
+.deploy*/
+_multiconfig.yml
