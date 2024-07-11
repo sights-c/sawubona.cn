@@ -6,6 +6,7 @@ tags:
 - Device driver
 categories:
 - Linux
+excerpt: Introduction of the source tree of linux, the source packages and header packages.
 ---
 
 ### Introduction

@@ -7,6 +7,7 @@ tags:
 - 探测器
 categories:
 - 读出电子学
+excerpt: 简单归纳了MCP的多阳极设计方案、白光中子共振成像系统设计对飞行时间测量及电荷测量的需求、电荷测量的设计方案以及原文作者所采用的设计模块化、层次化的读出电子学系统及DAQ方案。
 ---
 
 全文参考： [陈朕. 基于MCP的白光中子共振成像系统的读出电子学研究[D]. 安徽:中国科学技术大学,2022.](https://d.wanfangdata.com.cn/thesis/ChJUaGVzaXNOZXdTMjAyMzA5MDESCFk0MDM2OTk4Ggh1Y280Y2MybQ%3D%3D)

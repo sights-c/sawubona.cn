@@ -5,6 +5,7 @@ tags:
 - Web
 categories:
 - Web
+excerpt: 使用云服务器（Debian），安装和应用Twikoo评论系统的基本流程。
 ---
 
 - Debian服务端使用nvm安装<Node.js>
