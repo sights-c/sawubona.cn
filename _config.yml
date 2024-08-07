@@ -103,8 +103,8 @@ theme: redefine
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repo: git@121.36.201.18:/home/git/sawubona.git
-  branch: master
+  repo: https://github.com/sights-c/sawubona.cn.git
+  branch: gh-page
 
 # Mathematical formula
 mathjax:
